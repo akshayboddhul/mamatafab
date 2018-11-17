@@ -288,7 +288,7 @@
                           </ul>
                       </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6" id="form">
                       <div id="contact-right">
                           <form action="mailer-new.php" method="post">
                               <h4>Send Message</h4>
@@ -312,13 +312,13 @@
                                   </div>
                                   <div class="col-md-6">
                                       <div class="form-group">
-                                          <input type="email" class="form-control" id="email" placeholder="Your Email Addresss">
+                                          <input type="email" class="form-control" id="email" name="email" placeholder="Your Email Addresss">
                                           <span id="email-error-msg"></span>
                                       </div>
                                   </div>
                                   <div class="col-md-12">
                                       <div class="form-group">
-                                          <input type="number" class="form-control" id="phone" placeholder="Your Mobile Number">
+                                          <input type="number" class="form-control" id="phone"  name="phone" placeholder="Your Mobile Number">
                                           <span id="phone-error-msg"></span>
                                       </div>
                                   </div>
