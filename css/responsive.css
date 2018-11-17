@@ -1,0 +1,51 @@
+/*Large Desktop*/
+@media(min-width: 1200px){
+
+}
+
+/*Large Device*/
+@media(min-width: 992px){
+
+}
+
+/*Medium Device*/
+@media(min-width: 768px){
+    #home-heading h1{
+        font-size: 48px;
+    }
+    #home-text p{
+        font-size: 15px;
+    }
+    .btn-general{
+        padding: 8px 35px;
+        font-size: 12px
+    }
+}
+
+/*Small Device*/
+@media(min-width: 576px){
+    
+}
+
+/*Optional Device*/
+@media(max-width: 480px){
+    
+    #home-heading h1{
+        font-size: 28px;
+    }
+    #home-text p{
+        font-size: 10px;
+    }
+    .btn-general{
+        padding: 8px 35px;
+        font-size: 12px
+    }
+    #about-right{
+        margin-top: 30px
+    }
+}
+
+/*Optional Device*/
+@media(max-width: 320px){
+
+}

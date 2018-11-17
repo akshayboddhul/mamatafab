@@ -1,0 +1,301 @@
+html,body{
+    height: 100%;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+section{
+    background: #fff;
+    overflow: hidden;
+}
+
+/*Home Content*/
+#home{
+    background: none;
+    height: 100%;
+}
+#home-bg-video{
+   position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    background: url("../resources/video/solo.jpg") no-repeat;
+    background-size: cover;
+}
+#home-overlay{
+    background-color: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#home-content{
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+#home-content-inner{
+    display: table-cell;
+    vertical-align: middle;
+}
+#home-heading h1 {
+    color: #fff;
+    font-size: 65px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 0;
+    display: inline-block;
+}
+
+#home-heading h1 span {
+    color: #f4c613;
+    font-weight: 500;
+}
+
+#home-text p {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 100;
+    margin: 8px 0 30px 0;
+}
+
+
+/* =========================================
+                Buttons
+============================================ */
+
+.btn-general {
+    font-family: 'Raleway', sans-serif;
+    border-radius: 28px;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin: 0 6px;
+    padding: 12px 46px 12px 46px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.btn-home {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+
+.btn-home:hover,
+.btn-home:focus {
+    color: #fff;
+    background-color: #f4c613;
+    border: 1px solid #f4c613;
+}
+
+.btn-yellow {
+    color: #fff;
+    border: 1px solid #f4c613;
+    background-color: #f4c613;
+}
+
+.btn-yellow:hover,
+.btn-yellow:focus {
+    color: #fff;
+    background-color: #212226;
+    border: 1px solid #212226;
+}
+
+.btn-white {
+    color: #212226;
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+
+.btn-white:hover,
+.btn-white:focus {
+    color: #fff;
+    background-color: #212226;
+    border: 1px solid #212226;
+}
+
+
+/* =========================================
+                Arrow Down
+============================================ */
+
+#arrow-down {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    color: #fff;
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    margin-left: -16px;
+    z-index: 1;
+}
+
+#arrow-down:hover,
+#arrow-down:focus {
+    color: #f4c613;
+}
+/*Content Box Layout*/
+.content-box-lg{
+    padding: 80px 0;
+}
+/*About*/
+.section-heading{
+    padding-bottom: 50px;
+}
+#about-right p{
+    line-height: 24px;
+    font-size: 18px;
+}
+
+/*Product*/
+.product-name a{
+    color: #000;
+}
+.product-name a:hover{
+    text-decoration: none;
+    color: #000;
+}
+.product-list{
+    margin: 0 15px;
+}
+.product-info{
+    padding: 10px 0 30px;
+}
+h4.product-name{
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-top: 2px;
+    color: #f4c613;
+}
+ul.office-details{
+    list-style: none;
+    padding: 0;
+}
+ul.office-details li{
+    font-family: "Open Sans", sans-serif;
+    margin-top: 12px;
+    display: flex;
+}
+ul.office-details li i{
+    font-size: 20px;
+    width: 45px;
+}
+#contact-right{
+    padding: 25px 30px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    border-radius: 4px;
+}
+#contact-right h4{
+    font-size: 24px;
+}
+#contact-right p{
+    margin-bottom: 25px;
+}
+
+#contact-right form .form-control{
+    font-family: "Open Sans", sans-serif;
+    padding: 5px 12px;
+    font-size: 15px;
+    line-height: 24px;
+}
+#contact-right form textarea.form-control{
+    min-height: 160px;
+}
+
+
+footer{
+    background: #212226;
+    padding: 30px;
+}
+footer p{
+    color: #fff;
+    line-height: 20px;
+}
+footer p span{
+    color: #f4c613;
+}
+
+
+#name-error-msg,
+#email-error-msg,
+#phone-error-msg,
+#message-error-msg{
+    color: red;
+    font-size: 15px;
+    margin-left: 12px;
+}
+
+/*Navigation*/
+.navbar-nav li a{
+    font-size: 16px;
+    margin: 10px 10px;
+    color: #fff !important;
+}
+.navbar-nav li a:hover{
+    border-bottom: 1px solid #f4c613;
+}
+
+/*Sticky Navbar*/
+.sticky{
+    background-color: darkgray;
+    transition: all 400ms ease;
+    padding: 1% 12%;
+}
+/*Logo*/
+.brand-name h2{
+    line-height: 0.3;
+}
+
+.b-logo{
+    font-family: serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
