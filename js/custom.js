@@ -25,6 +25,9 @@ $(function(){
             // breakpoint from 480 up
             480 : {
                 items: 2
+            },
+            768 : {
+                items: 3
             }
         }
     });    

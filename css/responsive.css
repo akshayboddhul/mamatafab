@@ -29,12 +29,12 @@
 
 /*Optional Device*/
 @media(max-width: 480px){
-    
+   
     #home-heading h1{
         font-size: 28px;
     }
     #home-text p{
-        font-size: 10px;
+        font-size: 12px;
     }
     .btn-general{
         padding: 8px 35px;
