@@ -299,7 +299,7 @@
                                           echo "<div class=\"form-message success\">Thank You! Your Message has been sent.</div>";
                                       }
                                       if($_GET["success"] == -1){
-                                          echo "<div class=\"form-message error\">Oops! Something went wrong. Please try again!</div>";
+                                          echo "<div class=\"form-message fail\">Oops! Something went wrong. Please try again!</div>";
                                       }
                                   ?>
                               </div>

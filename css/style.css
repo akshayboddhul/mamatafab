@@ -212,7 +212,17 @@ ul.office-details li i{
 #contact-right form textarea.form-control{
     min-height: 160px;
 }
-
+.form-message{
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 3px;
+}
+.success{
+    color: forestgreen;
+}
+.fail{
+    color: red;
+}
 
 footer{
     background: #212226;

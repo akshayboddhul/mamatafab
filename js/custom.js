@@ -46,3 +46,24 @@ $(window).on("load", function(){
     $("#home-text").addClass("animated zoomIn");
     $("#home-btn").addClass("animated zoomIn");
 });
+
+//Contact Form Validation
+$("#name").on("focusout", function(){
+   if($(this).val() != ""){
+       $(this).css("border", "1px solid green");
+       $("#name-error-msg").text("");
+   } else {
+       $(this).css("border", "1px solid red");
+       $("#name-error-msg").text("Name is Required");
+   }
+});
+
+$("#email").on("focusout", function(){
+   if($(this).val() !== ""){
+       $(this).css("border", "1px solid green");
+       $("#email-error-msg").text("");
+   } else{
+       $(this).css("border","1px solid red");
+       $("#email-error-msg").text("Email Required");
+   }
+});
