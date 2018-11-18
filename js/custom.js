@@ -17,8 +17,30 @@ $(function(){
            $("#back-to-top").fadeOut();
        }
     });    
-});   
-    
+}); 
+
+$(".btn-back-to-top").on('click', function(){
+    $('html, body').animate({
+      scrollTop:0
+    }, 1500);
+  });
+
+$('.nav-item #nav-about').on('click',function(){
+    $('html, body').animate({scrollTop:700},1000);
+});
+
+$('.nav-item #nav-home').on('click',function(){
+    $('html, body').animate({scrollTop:0},1000);
+});
+$('.nav-item #nav-products').on('click',function(){
+    $('html, body').animate({scrollTop:2500},1500);
+});
+$('.nav-item #nav-contact').on('click',function(){
+    $('html, body').animate({scrollTop:3250},1500);
+});
+$('#home-btn').on('click',function(){
+    $('html, body').animate({scrollTop:2500},1500);
+});
 //Product Slider
 $(function(){
     $("#product-lists").owlCarousel({
