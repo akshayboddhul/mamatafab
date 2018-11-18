@@ -1,10 +1,20 @@
 //Scroll Navigation
 $(function(){
     $(window).scroll(function(){
-       if($(document).scrollTop() > 450){
+       if($(window).scrollTop() > 50){
            $('nav').addClass("fixed-top").addClass("sticky");
+           
+           //show dark logo
+           //$(".navbar-brand img").attr("src", "img-path-dark");
+           
+           //Show Back to top button
+           $("#back-to-top").fadeIn();
        } else {
            $('nav').removeClass("fixed-top").removeClass("sticky");
+           //$(".navbar-brand img").attr("src", "img-path");
+           
+           //Hide Back to top button
+           $("#back-to-top").fadeOut();
        }
     });    
 });   
@@ -66,4 +76,28 @@ $("#email").on("focusout", function(){
        $(this).css("border","1px solid red");
        $("#email-error-msg").text("Email Required");
    }
+});
+
+$("#phone").on("focusout", function(){
+   if($(this).val() != ""){
+       $(this).css("border", "1px solid green");
+       $("#phone-error-msg").text("");
+   } else {
+       $(this).css("border", "1px solid red");
+       $("#phone-error-msg").text("Phone is Required");
+   }
+});
+
+//Smooth Scrolling
+$(function(){
+    $("a.smooth-scroll").click(function(e){
+        e.preventDefault();
+        
+        //get section like #about, #contact etc
+        var section_id = $(this).attr("href");
+        console.log(section_id);
+        $("html", "body").animate({
+           scrollTop: $(section_id).offset().top - 64
+        }, 1250);
+    });
 });

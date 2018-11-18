@@ -30,17 +30,20 @@
    <!-- Responsive CSS -->
    <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar">
   
   <!-- Navigation  -->
   <div class="site-wrapper">
       <div class="container" id="navigation">
           <nav class="navbar navbar-expand-lg navbar-dark">
-              <a href="#" class="navbar-brand">
+              <a href="#" class="navbar-brand smooth-scroll">
                  <div class="brand-name text-center">
+<!--
                         <h4 class="b-logo"><span>B&amp;B</span></h4>
                       <h2><span>MAMATA</span></h2>   
                       <h5><span>Fabrics</span></h5>
+-->
+                <h2><span>MAMATA</span></h2>
                  </div>
                   
               </a>
@@ -64,12 +67,7 @@
                       <li class="nav-item">
                           <a href="#" class="nav-link" id="nav-broucher">Broucher</a>
                       </li>
-                      <li class="nav-item">
-                          <a href="#" class="nav-link" id="nav-service">Services</a>
-                      </li>
-                      <li class="nav-item">
-                          <a href="#" class="nav-link" id="nav-why">Why This?</a>
-                      </li>
+                      
                   </ul>
               </div>
           </nav>
@@ -99,13 +97,13 @@
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, qui commodi illum quae soluta delectus.</p>
         </div>
         <div id="home-btn">
-          <a href="#product" class="btn btn-general btn-home" title="Start Now" role="button">Start Now</a>
+          <a href="#product" class="btn btn-general btn-home smooth-scroll" title="Start Now" role="button">Start Now</a>
         </div>
       </div>
     </div>
 
     <!-- Arrow Down -->
-    <a href="#about" id="arrow-down" class="animated slideInDown infinite">
+    <a href="#about" id="arrow-down" class="animated slideInDown infinite smooth-scroll">
       <i class="fa fa-angle-down"></i>
     </a>
 
@@ -253,7 +251,6 @@
   </section>
   <!-- End Product -->
   
-  
   <!-- Contact Section-->
   <section id="contact">
       <div class="content-box-lg">
@@ -290,19 +287,10 @@
                   </div>
                   <div class="col-md-6">
                       <div id="contact-right">
-                          <form action="mailer-new.php" method="post">
+                          <form action="#" method="post">
                               <h4>Send Message</h4>
                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, deleniti!</p>
-                              <div class="row">
-                                  <? php
-                                      if($_GET["success"] == 1){
-                                          echo "<div class=\"form-message success\">Thank You! Your Message has been sent.</div>";
-                                      }
-                                      if($_GET["success"] == -1){
-                                          echo "<div class=\"form-message error\">Oops! Something went wrong. Please try again!</div>";
-                                      }
-                                  ?>
-                              </div>
+                              
                               <div class="row">
                                   <div class="col-md-6">
                                       <div class="form-group">
@@ -350,6 +338,8 @@
               </div>
           </div>
       </div>
+      <!-- Back to Top Button -->
+      <a href="#home" id="back-to-top" title="Home" role="button" class="btn btn-sm btn-yellow btn-back-to-top smooth-scroll smooth-scroll"><i class="fa fa-angle-up"></i></a>
   </footer>
   <!-- End Footer -->
   

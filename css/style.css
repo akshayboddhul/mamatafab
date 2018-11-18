@@ -122,6 +122,16 @@ section{
     border: 1px solid #212226;
 }
 
+/*Back-to-top button*/
+.btn-back-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 3px 15px;
+    border-right: 4px;
+    font-size: 22px;
+    
+}
 
 /* =========================================
                 Arrow Down
@@ -260,7 +270,14 @@ footer p span{
 .sticky{
     background-color: darkgray;
     transition: all 400ms ease;
-    padding: 1% 12%;
+/*    padding: 1% 12%;*/
+    padding-bottom: 0;
+    padding-right: 12%;
+    padding-left: 12%;
+}
+.sticky > ul.navbar-nav > li.active > a{
+    color: #f4c613;
+    font-weight: 500;
 }
 /*Logo*/
 .brand-name h2{
