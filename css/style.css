@@ -279,7 +279,7 @@ footer p span{
 
 /*Sticky Navbar*/
 .sticky{
-    background-color: darkgray;
+    background-color: #212226;
     transition: all 400ms ease;
 /*    padding: 1% 12%;*/
     padding-bottom: 0;
@@ -299,7 +299,10 @@ footer p span{
 .b-logo{
     font-family: serif;
 }
-
+.brand{
+    margin: 0 20px;
+    margin-bottom: 20px;
+}
 
 
 
