@@ -20,16 +20,11 @@
         padding: 8px 35px;
         font-size: 12px
     }
-    .product-title{
-        padding-top: 40px;
-    }
+    
 }
 
 /*Small Device*/
 @media(min-width: 576px){
-    .product-title{
-        padding-top: 40px;
-    }
     
 }
 
