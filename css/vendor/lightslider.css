@@ -135,7 +135,9 @@
     transition: border-radius 0.12s linear 0s 0.35s linear 0s;
 }
 .lSSlideOuter .lSPager.lSGallery li.active, .lSSlideOuter .lSPager.lSGallery li:hover {
-    border-radius: 5px;
+    border-radius: 10px;
+    opacity: 0.4;
+    
 }
 .lSSlideOuter .lSPager.lSGallery img {
     display: block;
@@ -157,7 +159,7 @@
     display: block;
     top: 50%;
     height: 32px;
-    background-image: url('../img/controls.png');
+    background-image: url('../../resources/img/controls.png');
     cursor: pointer;
     position: absolute;
     z-index: 99;
@@ -174,7 +176,7 @@
     left: 10px;
 }
 .lSAction > .lSNext {
-    background-position: -32px 0;
+    background-position: 32px 0;
     right: 10px;
 }
 .lSAction > a.disabled {
