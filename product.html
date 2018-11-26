@@ -26,41 +26,141 @@
    <!-- Timeline CSS -->
    <link rel="stylesheet" href="css/timeline.css">
    <!-- Product Slider CSS -->
-   <link rel="stylesheet" href="css/slider.css">
+   <link rel="stylesheet" href="css/vendor/lightslider.css">
    <!-- Responsive CSS -->
    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
    
-   <div class="container" style="padding: 50px 0">
-      <div class="img-container">
-          <ul class="thumb">
-           <li><a href="resources/img/product-slider-imgs/product1-300.jpg" target="imgBox"><img src="resources/img/product-slider-imgs/product1-100.jpg" alt=""></a></li>
-            <li><a href="resources/img/product-slider-imgs/product2-300.jpg" target="imgBox"><img src="resources/img/product-slider-imgs/product2-100.jpg" alt=""></a></li>
-            <li><a href="resources/img/product-slider-imgs/product3-300.jpg" target="imgBox"><img src="resources/img/product-slider-imgs/product3-100.jpg" alt=""></a></li>
-       </ul>
-       <div class="imgBox">
-           <img src="resources/img/product-slider-imgs/product1-300.jpg" alt="">
-       </div>   
+   <!-- Navigation  -->
+  <div class="site-wrapper">
+      <div class="container" id="navigation">
+          <nav class="navbar navbar-expand-lg navbar-dark">
+              <a href="#" class="navbar-brand smooth-scroll">
+                 <div class="brand-name text-center">
+<!--
+                        <h4 class="b-logo"><span>B&amp;B</span></h4>
+                      <h2><span>MAMATA</span></h2>   
+                      <h5><span>Fabrics</span></h5>
+-->
+                <h2><span>MAMATA</span></h2>
+                 </div>
+                  
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+                  <i class="fa fa-align-center"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto">
+                      <li class="nav-item active">
+                          <a href="#" class="nav-link" id="nav-home">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#about" class="nav-link" id="nav-about">About</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#product" class="nav-link" id="nav-products">Products</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#contact" class="nav-link" id="nav-contact">Contact</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#" class="nav-link" id="nav-broucher">Broucher</a>
+                      </li>
+                      
+                  </ul>
+              </div>
+          </nav>
       </div>
-   </div>   
+  </div>
+  <!-- End Navigation -->
+  
+  <!-- Products Slider Starts -->
+      <div class="container mt-4">
+          <div class="row">
+              <div class="col-md-6">
+                  <ul id="lightSlider">
+                      <li data-thumb="https://picsum.photos/100">
+                        <img src="https://picsum.photos/500" class="img-responsive"/>
+                      </li>
+                      <li data-thumb="https://picsum.photos/100">
+                        <img src="https://picsum.photos/500" class="img-responsive"/>
+                      </li>
+                      <li data-thumb="https://picsum.photos/100">
+                        <img src="https://picsum.photos/500" class="img-responsive"/>
+                      </li>
+                      <li data-thumb="https://picsum.photos/100">
+                        <img src="https://picsum.photos/500" class="img-responsive"/>
+                      </li>
+                      <li data-thumb="https://picsum.photos/100">
+                        <img src="https://picsum.photos/500" class="img-responsive"/>
+                      </li>
+                      <li data-thumb="https://picsum.photos/100">
+                        <img src="https://picsum.photos/500" />
+                      </li>
+                      <li data-thumb="https://picsum.photos/100">
+                        <img src="https://picsum.photos/500" class="img-responsive"/>
+                      </li>
+                      <li data-thumb="https://picsum.photos/100">
+                        <img src="https://picsum.photos/500" class="img-responsive"/>
+                      </li>
+                      <li data-thumb="https://picsum.photos/100">
+                        <img src="https://picsum.photos/500" class="img-responsive"/>
+                      </li>
+                      
+                  </ul>
+              </div>
+              <div class="col-md-6">
+                  <div class="product-title">
+                      <h2 class="text-center text-uppercase mb-4"><b>Boddul Gold</b></h2>
+                  </div>
+                  <div class="product-description">
+                      <h5>Size Available:</h5>
+                      <p>1218, 1421, 2754, 3060, 3672</p>
+                      <h5>Design Available:</h5>
+                      <p>8</p>
+                      <h5>Colors Available:</h5>
+                      <p>5</p>
+                      <h5>Info</h5>
+                      <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                  <div class="contact-btn">
+                      <button class="btn btn-warning">Contact</button>
+                  </div>
+              </div>
+          </div>
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      </div> 
+  <!-- Products Slider Ends -->
+  
+  <!-- Footer -->
+  <footer class="text-center">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12 animated wow slideInUp">
+                  <p>copyright &copy; 2018, All Rights Reserved by <span>Mamata Fabrics</span></p>
+              </div>
+          </div>
+      </div>
+      <!-- Back to Top Button -->
+      <a href="#home" id="back-to-top" title="Home" role="button" class="btn btn-sm btn-yellow btn-back-to-top"><i class="fa fa-angle-up"></i></a>
+  </footer>
+  <!-- End Footer -->
+  
+  
+   
     <!-- jquery -->
     <script src="js/vendor/jquery-3.3.1.min.js"></script>
    
      <!-- Bootstrap -->
     <script src="js/vendor/bootstrap.js"></script>
+    <!-- Light Slider JS -->
+    <script src="js/vendor/lightslider.js"></script>
     <!-- Owl Carousel JS -->
     <script src="js/vendor/OwlCarousel/owl.carousel.min.js"></script>
     <!-- Custom JS -->
     <script src="js/custom.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-           $(".thumb a").mouseover(function(e){
-               e.preventDefault();
-               $(".imgBox img").attr("src",$(this).attr("href"));
-           }) ;
-        });
-    </script>
+    
 </body>
 </html>
 

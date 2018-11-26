@@ -305,7 +305,12 @@ footer p span{
 }
 
 
-
+/*products slider*/
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
 
 
 

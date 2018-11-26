@@ -149,3 +149,17 @@ $(function () {
 		}
     });
 });
+
+//Product Slider
+$(function(){
+   $("#lightSlider").lightSlider({
+       gallery: true,
+       item: 1,
+       loop: true,
+       autoWidth: false,
+       slideMove: 1,
+       slideMargin: 10,
+       thumbItem: 9,
+       speed: 400,
+   }) 
+});
