@@ -9,7 +9,7 @@
 
     // Check the data.
     if (empty($name) OR empty($message) OR empty($phone) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location: https://akshayboddhul.github.io/mamatafab/index.php?success=-1#form");
+        //header("Location: https://akshayboddhul.github.io/mamatafab/index.php?success=-1#form");
         exit;
     }
 
@@ -32,6 +32,6 @@
     mail($recipient, $subject, $email_content, $email_headers);
     
     // Redirect to the index.html page with success code
-    header("Location: https://akshayboddhul.github.io/mamatafab/index.php?success=1#form");
+    //header("Location: https://akshayboddhul.github.io/mamatafab/index.php?success=1#form");
 
 ?>
